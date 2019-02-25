@@ -100,6 +100,13 @@ venv.bak/
 # mkdocs documentation
 /site
 
+# vs code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
 # mypy
 .mypy_cache/
 
