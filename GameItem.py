@@ -10,4 +10,4 @@ class GameItem:
       return self.gameTime.strftime("%d.%m.%Y %H:%M:%S")
    
    def printAllInfo(self):
-      print self.gameType +  ", time: ", self.printFormatedDate()
+      print(f"{self.gameType}, time: , {self.printFormatedDate()}")
