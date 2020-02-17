@@ -32,7 +32,7 @@ def sayhi(bot, job):
 def time(bot, update,job_queue):
     job = job_queue.run_repeating(sayhi, 30, context=update)
 
-def main():
+if __name__ == "__main__":
     token = os.getenv("BOT_TOKEN")
     if not token:
         logging.critical("No token found.")
@@ -58,6 +58,3 @@ def main():
 
     updater.start_polling()
     updater.idle()
-
-if __name__ == "__main__":
-    main()
